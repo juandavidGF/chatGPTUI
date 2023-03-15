@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 import CircularProgress from '@mui/material/CircularProgress';
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -91,11 +92,11 @@ export default function Home() {
       </Head>
       <div className={styles.topnav}>
         <div className={styles.navlogo}>
-          <a href="/">GPT-4 Chat UI</a>
+          <Link href="/">GPT-4 Chat UI</Link>
         </div>
         <div className={styles.navlinks}>
-          {/* <a href="https://platform.openai.com/docs/models/gpt-4" target="_blank">Docs</a>
-          <a href="https://replit.com/@zahid/GPT-4-UI" target="_blank">Replit</a> */}
+          {/* <Link href="https://platform.openai.com/docs/models/gpt-4" target="_blank">Docs</Link>
+          <Link href="https://replit.com/@zahid/GPT-4-UI" target="_blank">Replit</Link> */}
         </div>
       </div>
       <main className={styles.main}>
@@ -149,7 +150,7 @@ export default function Home() {
             </form>
           </div>
           <div className={styles.footer}>
-            {/* <p>Powered by <a href="https://openai.com/" target="_blank">OpenAI</a>. Built on <a href="https://replit.com/@zahid/GPT-4-UI" target="_blank">Replit</a>.</p> */}
+            {/* <p>Powered by <Link href="https://openai.com/" target="_blank">OpenAI</Link>. Built on <Link href="https://replit.com/@zahid/GPT-4-UI" target="_blank">Replit</Link>.</p> */}
           </div>
         </div>
       </main>
